@@ -23,11 +23,10 @@ def download_with_progress(url, save_path):
     progress_bar.close()
 
 class NexusInteractor:
-    def __init__(self, firefox_profile_directory, gecko_driver_directory):
+    def __init__(self, firefox_profile_directory):
         options = Options()
         options.headless = True
         options.add_argument("-profile")
-        #options.add_argument("--headless")
         options.add_argument(firefox_profile_directory)
 
         self.driver = selenium.webdriver.Firefox(options=options)

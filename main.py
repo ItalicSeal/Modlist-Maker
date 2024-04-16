@@ -18,7 +18,6 @@ modlist_maker_download_path = os.getenv("MODLIST_MAKER_DIRECTORY")
 mo2_directory = os.getenv("MO2_DIRECTORY")
 downloads_directory = os.getenv("DOWNLOADS_DIRECTORY")
 firefox_profile_directory = os.getenv("FIREFOX_PROFILE_DIRECTORY")
-gecko_driver_directory = os.getenv("GECKO_DRIVER_DIRECTORY")
 
 proceed_input = input(f"Proceed, will clear the following directory if not empty {modlist_maker_download_path}: ").lower()
 if not proceed_input == 'y' or proceed_input == 'yes':
@@ -74,7 +73,7 @@ if not os.path.exists(downloads_directory):
     os.mkdir(downloads_directory)
 
 print("downloading mods...")
-webdriver = nexus_utils.NexusInteractor(firefox_profile_directory, gecko_driver_directory)
+webdriver = nexus_utils.NexusInteractor(firefox_profile_directory)
 time.sleep(10)
 for mod in modlist.get_list()['mods']:
     print(f"Downloading {mod['name']}...")

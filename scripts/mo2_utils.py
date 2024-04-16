@@ -3,8 +3,6 @@ import shutil
 import requests
 
 from py7zr import unpack_7zarchive
-import zipfile
-import tarfile
 
 import tempfile
 import os
