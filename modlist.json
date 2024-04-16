@@ -1,0 +1,45 @@
+{
+  "name": "micah_raygun_ modlist 17/3/24",
+  "game": "DaggerfallUnity",
+  "author": "micah_raygun_ -- Transferred by ItalicSeal",
+  "version": 0.1,
+  "mods": [
+    {
+      "name": "HD Climates map meets Paper map",
+      "description": "Fusion between \"HD Textures Climates Travel Map\" and \"Paper Map for Daggerfall Unity\", with coats of arms for each region. ",
+      "mod_link": "https://www.nexusmods.com/daggerfallunity/mods/707?tab=description",
+      "download_link": "https://www.nexusmods.com/daggerfallunity/mods/707?tab=files&file_id=3556",
+      "file_extension": ".zip",
+      "download-type": "nexus",
+      "enabled": true,
+      "game_folder": "HD Climates map meets Paper map"
+    },
+    {
+      "name": "Real Grass",
+      "description": "A mod for Daggerfall Unity that provides a groundcover with grass and other details. ",
+      "mod_link": "https://www.nexusmods.com/daggerfallunity/mods/20?tab=description",
+      "download_link": "https://www.nexusmods.com/daggerfallunity/mods/20?tab=files&file_id=2762",
+      "file_extension": ".zip",
+      "download-type": "nexus",
+      "enabled": true
+    },
+    {
+      "name": "Simple 3d Trees",
+      "description": "Replaces 2d sprites of trees and rocks with 3d models. ",
+      "mod_link": "https://www.nexusmods.com/daggerfallunity/mods/438/?tab=description",
+      "download_link": "https://www.nexusmods.com/daggerfallunity/mods/438?tab=files&file_id=3521",
+      "file_extension": ".7z",
+      "download-type": "nexus",
+      "enabled": true
+    },
+    {
+      "name": "Basic Roads",
+      "description": "Adds roads and dirt tracks to the world of Daggerfall, which can be travelled upon if you use my Travel Options mod. ",
+      "mod_link": "https://www.nexusmods.com/daggerfallunity/mods/134?tab=description",
+      "download_link": "https://www.nexusmods.com/daggerfallunity/mods/134?tab=files&file_id=3276",
+      "file_extension": ".zip",
+      "download-type": "nexus",
+      "enabled": true
+    }
+  ]
+}
