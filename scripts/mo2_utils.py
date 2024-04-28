@@ -66,26 +66,6 @@ class Utils:
         shutil.copytree(profile_dir, profile_dest_dir)
         with open(os.path.join(profile_dest_dir, "modlist.txt"), "w") as file:
             file.write(modlist.gen_modlist_file())
-
-    # def install_mod(self, mod_directory, install_directory, mod_name, game_folder=None):
-    #    if not os.path.exists(mod_directory):
-    #        print(f"Mod: '{mod_directory}' does not exist.")
-    #        return
-    #    if not os.path.exists(install_directory):
-    #        os.makedirs(install_directory)
-
-    #    if zipfile.is_zipfile(mod_directory):
-    #        base_path = os.path.join(install_directory, mod_name)
-    #        print(f"Base path: {base_path}")
-    #        with zipfile.ZipFile(mod_directory, 'r') as zip_ref:
-    #            zip_ref.extractall(base_path)
-    #    elif tarfile.is_tarfile(mod_directory):
-    #        base_path = os.path.join(install_directory, mod_name)
-    #        with tarfile.open(mod_directory, 'r') as tar_ref:
-    #            tar_ref.extractall(base_path)
-    #    else:
-    #        print(f"Unsupported archive format for mod: '{mod_directory}'.")
-    #        return
     def install_mod(self, mod_directory, install_directory, mod_name, game_folder=None):
         if not os.path.exists(mod_directory):
             print(f"Mod: '{mod_directory}' does not exist.")
