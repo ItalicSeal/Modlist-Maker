@@ -8,6 +8,7 @@ currently not finished and not ready for use.
    git clone https://github.com/ItalicSeal/Modlist-Maker
 2. **Install requirements:** Do this in a new env to because I said so.
    ```bash
+   python -m venv c:\path\to\myenv
    pip install -r requirements.txt
 3. **Create a firefox profile:** Create a firefox profile and log onto your nexus mods account.
 4. **Run main script:**
