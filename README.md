@@ -26,3 +26,5 @@ currently not finished and not ready for use.
    * GAME_DIRECTORY: The directory where the game is located.
    * EXECUTABLE_DIRECTORY: The directory of the game's executable file, relative to the game directory.
    * FIREFOX_PROFILE_DIRECTORY: The directory of the previously created Firefox profile.
+
+Alternatively edit the .env file by hand 
