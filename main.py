@@ -66,7 +66,7 @@ modified_content = "\n".join(lines)
 
 print("configuring mod organizer 2...")
 Mo2_utils.add_ini(modified_content, mo2_directory)
-Mo2_utils.add_profile(r'C:\Users\USER\IdeaProjects\ModlistMaker\cloneable\game_profiles\DaggerfallUnity\Default', f"{mo2_directory}/profiles/Default", modlist)
+Mo2_utils.add_profile('cloneable\game_profiles\DaggerfallUnity\Default', f"{mo2_directory}/profiles/Default", modlist)
 
 if not os.path.exists(downloads_directory):
     print("creating downloads directory...")

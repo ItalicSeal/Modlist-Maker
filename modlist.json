@@ -40,6 +40,15 @@
       "file_extension": ".zip",
       "download-type": "nexus",
       "enabled": true
+    },
+    {
+      "name": "Basic Roads",
+      "description": "Adds roads and dirt tracks to the world of Daggerfall, which can be travelled upon if you use my Travel Options mod. ",
+      "mod_link": "https://www.nexusmods.com/daggerfallunity/mods/134?tab=description",
+      "download_link": "https://www.nexusmods.com/daggerfallunity/mods/134?tab=files&file_id=3276",
+      "file_extension": ".zip",
+      "download-type": "nexus",
+      "enabled": true
     }
   ]
 }
