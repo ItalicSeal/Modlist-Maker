@@ -13,7 +13,10 @@ currently not finished and not ready for use.
 4. **Run main script:**
    ```bash
    python modlist_maker.py
-5. **Enter necessary details:** When prompted to config env file, select yes and enter details for running the scipt
+
+### Running
+
+**Enter necessary details:** When prompted to config env file, select yes and enter details for running the scipt
 
    * MODLIST_MAKER_DIRECTORY: The folder where Modlist-Maker is located.
    * MODLIST_INSTALL_FILE_NAME: The name of the modlist installation file.
