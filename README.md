@@ -10,7 +10,7 @@ currently not finished and not ready for use.
    ```bash
    python -m venv c:\path\to\myenv
    pip install -r requirements.txt
-3. **Create a firefox profile:** Create a firefox profile and log onto your nexus mods account. In this firefox profile about:config change the **xpinstall.signatures.required** value to **False**, download the additional firefox addon and install to the profile it.
+3. **Create a firefox profile:** Create a firefox profile and log onto your nexus mods account. In this firefox profile about:config change the **xpinstall.signatures.required** value to **False**, install the additional firefox addon **Download blocker** to the profile.
 4. **Run main script:**
    ```bash
    python modlist_maker.py
