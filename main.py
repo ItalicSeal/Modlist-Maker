@@ -1,11 +1,9 @@
 import shutil
 import time
-
 from scripts import game_utils, mo2_utils, parser, nexus_utils, edit_env
 from dotenv import load_dotenv
 
 import os
-
 print("Please install firefox to continue, create a custom profile and log into your nexus account from there")
 collect_info_input = input("Collect Info? (Type y if this is your first time): ").lower()
 if collect_info_input == 'y' or collect_info_input == 'yes':
@@ -13,13 +11,16 @@ if collect_info_input == 'y' or collect_info_input == 'yes':
     env_editor.get_info()
 
 load_dotenv()
+
 mo2_download_url = os.getenv("MO2_URL")
 modlist_maker_download_path = os.getenv("MODLIST_MAKER_DIRECTORY")
 mo2_directory = os.getenv("MO2_DIRECTORY")
 downloads_directory = os.getenv("DOWNLOADS_DIRECTORY")
 firefox_profile_directory = os.getenv("FIREFOX_PROFILE_DIRECTORY")
+firefox_dev_directory = os.getenv("FIREFOX_DEV_EDITION_DIRECTORY")
 
-proceed_input = input(f"Proceed, will clear the following directory if not empty {modlist_maker_download_path}: ").lower()
+proceed_input = input(
+    f"Proceed, will clear the following directory if not empty {modlist_maker_download_path}: ").lower()
 if not proceed_input == 'y' or proceed_input == 'yes':
     exit()
 
@@ -29,7 +30,6 @@ if os.path.exists(modlist_maker_download_path):
 else:
     os.mkdir(modlist_maker_download_path)
     print("creating modlist maker directory...")
-
 
 Mo2_utils = mo2_utils.Utils(modlist_maker_download_path)
 Game_utils = game_utils.Utils(modlist_maker_download_path)
@@ -73,7 +73,7 @@ if not os.path.exists(downloads_directory):
     os.mkdir(downloads_directory)
 
 print("downloading mods...")
-webdriver = nexus_utils.NexusInteractor(firefox_profile_directory)
+webdriver = nexus_utils.NexusInteractor(firefox_profile_directory, firefox_dev_directory)
 time.sleep(10)
 for mod in modlist.get_list()['mods']:
     print(f"Downloading {mod['name']}...")

@@ -6,11 +6,11 @@ currently not finished and not ready for use.
 1. **Clone Repository:**
    ```bash
    git clone https://github.com/ItalicSeal/Modlist-Maker
-2. **Install requirements:** Do this in a new env to because I said so.
+2. **Install requirements:** Create a new env and install the required packages
    ```bash
    python -m venv c:\path\to\myenv
    pip install -r requirements.txt
-3. **Create a firefox profile:** Create a firefox profile and log onto your nexus mods account.
+3. **Create a firefox profile:** Create a firefox profile and log onto your nexus mods account. In this firefox profile about:config change the **xpinstall.signatures.required** value to **False**, download the additional firefox addon and install to the profile it.
 4. **Run main script:**
    ```bash
    python modlist_maker.py
@@ -26,5 +26,6 @@ currently not finished and not ready for use.
    * GAME_DIRECTORY: The directory where the game is located.
    * EXECUTABLE_DIRECTORY: The directory of the game's executable file, relative to the game directory.
    * FIREFOX_PROFILE_DIRECTORY: The directory of the previously created Firefox profile.
+   * FIREFOX_DEV_EDITION_DIRECTORY: The directory of your firefox developer edition binary.
 
 Alternatively edit the .env file by hand 
