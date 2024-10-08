@@ -5,6 +5,60 @@
   "version": 0.1,
   "mods": [
     {
+      "name": "BirdsInDaggerfall",
+      "description": "Adds flying birds in the skies of Daggerfall",
+      "mod_link": "https://www.nexusmods.com/daggerfallunity/mods/18?tab=description",
+      "download_link": "https://www.nexusmods.com/daggerfallunity/mods/18?tab=files&file_id=54",
+      "file_extension": ".zip",
+      "download-type": "nexus",
+      "enabled": true,
+      "install_steps": [
+        {
+          "command" : "create_directory",
+          "arguments": {
+            "directory": "MODS"
+          }
+        },
+        {
+          "command" : "move",
+          "arguments": {
+            "source": "StandaloneWindows/birds in daggerfall.dfmod",
+            "directory": "MODS"
+          }
+        },
+        {
+          "command": "delete",
+          "arguments": {
+            "directory": "Source"
+          }
+        },
+        {
+          "command": "delete",
+          "arguments": {
+            "directory": "StandaloneLinux"
+          }
+        },
+        {
+          "command": "delete",
+          "arguments": {
+            "directory": "StandaloneOSX"
+          }
+        },
+        {
+          "command": "delete",
+          "arguments": {
+            "directory": "StandaloneWindows"
+          }
+        },
+        {
+          "command": "delete",
+          "arguments": {
+            "directory": "Birds in Daggerfall 2.0.txt"
+          }
+        }
+      ]
+    },
+    {
       "name": "HD Climates map meets Paper map",
       "description": "Fusion between \"HD Textures Climates Travel Map\" and \"Paper Map for Daggerfall Unity\", with coats of arms for each region. ",
       "mod_link": "https://www.nexusmods.com/daggerfallunity/mods/707?tab=description",
@@ -12,7 +66,22 @@
       "file_extension": ".zip",
       "download-type": "nexus",
       "enabled": true,
-      "game_folder": "HD Climates map meets Paper map"
+      "game_folder": "HD Climates map meets Paper map",
+      "install_steps": [
+        {
+          "command" : "move",
+          "arguments": {
+            "source": "HD Climates map meets Paper map/Textures",
+            "directory": ""
+          }
+        },
+        {
+          "command": "delete",
+          "arguments": {
+            "directory": "HD Climates map meets Paper map"
+          }
+        }
+      ]
     },
     {
       "name": "Real Grass",
@@ -29,15 +98,6 @@
       "mod_link": "https://www.nexusmods.com/daggerfallunity/mods/438/?tab=description",
       "download_link": "https://www.nexusmods.com/daggerfallunity/mods/438?tab=files&file_id=3521",
       "file_extension": ".7z",
-      "download-type": "nexus",
-      "enabled": true
-    },
-    {
-      "name": "Basic Roads",
-      "description": "Adds roads and dirt tracks to the world of Daggerfall, which can be travelled upon if you use my Travel Options mod. ",
-      "mod_link": "https://www.nexusmods.com/daggerfallunity/mods/134?tab=description",
-      "download_link": "https://www.nexusmods.com/daggerfallunity/mods/134?tab=files&file_id=3276",
-      "file_extension": ".zip",
       "download-type": "nexus",
       "enabled": true
     },

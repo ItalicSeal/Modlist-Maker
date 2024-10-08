@@ -74,11 +74,9 @@ if not os.path.exists(downloads_directory):
 
 print("downloading mods...")
 webdriver = nexus_utils.NexusInteractor(firefox_profile_directory, firefox_dev_directory)
-time.sleep(10)
 for mod in modlist.get_list()['mods']:
     print(f"Downloading {mod['name']}...")
     webdriver.download_via_link(mod["download_link"], downloads_directory, f"{mod['name']}{mod['file_extension']}")
-    time.sleep(10)
 webdriver.exit()
 
 if not os.path.exists(os.path.join(mo2_directory, 'mods')):
@@ -88,8 +86,7 @@ if not os.path.exists(os.path.join(mo2_directory, 'mods')):
 for mod in modlist.get_list()['mods']:
     print(f"installing {mod['name']}...")
     download_dir = os.path.join(downloads_directory, f"{mod['name']}{mod['file_extension']}")
-    if 'game_folder' in mod and mod['game_folder'] is not None:
-        Mo2_utils.install_mod(download_dir, os.path.join(mo2_directory, 'mods'), mod['name'], mod['game_folder'])
-    else:
-        Mo2_utils.install_mod(download_dir, os.path.join(mo2_directory, 'mods'), mod['name'])
+    install_steps = mod.get('install_steps', [])
+    Mo2_utils.install_mod(download_dir, os.path.join(mo2_directory, 'mods'), mod['name'], install_steps)
+
 print("Done! enjoy")
